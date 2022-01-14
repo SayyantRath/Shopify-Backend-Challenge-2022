@@ -1,0 +1,24 @@
+{
+  "name": "shopify-challenge-be",
+  "version": "1.0.0",
+  "description": "Backend for the Shopify Summer 2022 Backend Engineering Internship OA",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: CI/CD Support not enabled\" && exit 1"
+  },
+  "author": "Sayyant Rath",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "json2csv": "^5.0.6",
+    "moment": "^2.29.1",
+    "mongo-date-query": "^1.3.1",
+    "mongodb": "^4.3.0",
+    "mongoose": "^6.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

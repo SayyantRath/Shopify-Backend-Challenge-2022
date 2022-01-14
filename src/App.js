@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Link } from "react-router-dom";
+import { Divider } from "@mui/material";
+import Home from "./pages/Home";
+
+import "./App.css";
+import { Button } from "@mui/material";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div
+        style={{
+          width: "100vw",
+          height: "5vw",
+          display: "flex",
+          flexDirection: "start",
+          alignItems: "center",
+          justifyContent: "flex-start",
+        }}
+      >
+        <Button
+          variant="contained"
+          sx={{ marginLeft: "3%" }}
+          component={Link}
+          to="/"
         >
-          Learn React
-        </a>
-      </header>
+          Home
+        </Button>
+      </div>
+      <Divider sx={{width: "100%"}}/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 }
