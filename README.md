@@ -4,15 +4,6 @@ Original Challenge Information: https://docs.google.com/document/d/1z9LZ_kZBUbg-
 
 This project was implemented using a __MongoDB, Express.js, React.js, Node.js (MERN)__ stack. 
 #
-## Features Implemented:
-
-* Create, Read, Update and Delete Inventory Items (CRUD Functionality)
-* Exporting database contents to CSV
-
-## Possible Features to Implement:
-
-* Flexibility with deletion (Undoing, etc.)
-
 ## Installation and Run Instructions:
 
 ### Prerequisites:
@@ -30,3 +21,13 @@ This project was implemented using a __MongoDB, Express.js, React.js, Node.js (M
 8) Open up one last terminal and navigate again to the local repository's "backend" folder
 9) Type in `npx nodemon server.js`
 10) The web app should now be fully functional allowing you to add, edit (pencil icon), delete (trash can icon) inventory items in addition to exporting database records to CSV.
+
+
+## Features Implemented:
+
+* Create, Read, Update and Delete Inventory Items (CRUD Functionality)
+* Exporting database contents to CSV
+
+## Possible Features to Implement:
+
+* Flexibility with deletion (Undoing, etc.)
