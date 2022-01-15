@@ -135,9 +135,9 @@ const Home = () => {
   const submitUpdatedProduct = () => {
 
     if (
-      newSKU === "" ||
-      newProductName == "" ||
-      newRetailPrice == 0
+      updatedSKU === "" ||
+      updatedProductName == "" ||
+      updatedRetailPrice == 0
     ) {
       setRenderWarningSnackbar(true);
       return;
