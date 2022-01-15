@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Shopify 2022 Backend Engineering Internship Challenge Submission
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Original Challenge Information: https://docs.google.com/document/d/1z9LZ_kZBUbg-O2MhZVVSqTmvDko5IJWHtuFmIu_Xg1A/edit
 
-## Available Scripts
+This project was implemented using a __MongoDB, Express.js, React.js, Node.js (MERN)__ stack. 
+#
+## Features Implemented:
 
-In the project directory, you can run:
+* Create, Read, Update and Delete Inventory Items (CRUD Functionality)
+* Exporting database contents to CSV
 
-### `npm start`
+## Possible Features to Implement:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Flexibility with deletion (Undoing, etc.)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation and Run Instructions:
 
-### `npm test`
+### Prerequisites:
+* Node.js (https://nodejs.org/en/)
+* MongoDB (Community Edition) (https://docs.mongodb.com/manual/administration/install-community/) _Note: If using the homebrew method (recommended for mac but requires installation of homebrew at https://brew.sh/), after installation, make sure to run `brew services start mongodb-community@5.0` and `brew services stop mongodb-community@5.0` back to back_
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Steps:
+1) Clone this repository to your local machine.
+2) Open up a terminal and navigate to the local repository's root directory.
+3) Type in `npm install`
+4) Type in `npm start`
+5) Open up another terminal and navigate to the local repository's "backend" folder
+6) Type in `npm install` here as well
+7) Type in `mongod --dbpath /local/path/to/shopify_be/backend/data` i.e. my command looked like `mongod --dbpath /Users/sayyantrath/Documents/hiringProjects/Shopify_BE/shopify_be/backend/data`
+8) Open up one last terminal and navigate again to the local repository's "backend" folder
+9) Type in `npx nodemon server.js`
+10) The web app should now be fully functional allowing you to add, edit (pencil icon), delete (trash can icon) inventory items in addition to exporting database records to CSV.
